@@ -1,11 +1,275 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
+    <!-- Add the card Layout and Relative Layout -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:layout_margin="3dp"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:gravity="center_horizontal"
+                android:padding="3dp"
+                android:text="World Corona Statistics"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cases"
+                        android:padding="4dp"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                    <!-- Create a textView to Display the Number of cases-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Number Of Cases"
+                        android:id="@+id/idTVWorldCases"
+                        android:padding="4dp"
+                        android:textSize="12sp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold"
+                    />
 
 
+                </LinearLayout> <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Recovered"
+                        android:padding="4dp"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+                    <!-- Create a textView to Display the Number of cases-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Total Recovered"
+                        android:id="@+id/idTVWorldRecovered"
+                        android:padding="4dp"
+                        android:textSize="12sp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold"
+                    />
+
+
+                </LinearLayout> <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Deaths"
+                        android:padding="4dp"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                    <!-- Create a textView to Display the Number of cases-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Number Of Deaths"
+                        android:id="@+id/idTVWorldDeaths"
+                        android:padding="4dp"
+                        android:textSize="12sp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold"
+                    />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        
+    </androidx.cardview.widget.CardView>   <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:layout_margin="3dp"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:gravity="center_horizontal"
+                android:padding="3dp"
+                android:text="South Africa Statistics"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cases"
+                        android:padding="4dp"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                    <!-- Create a textView to Display the Number of cases-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Number Of Cases"
+                        android:id="@+id/idTVSACases"
+                        android:padding="4dp"
+                        android:textSize="12sp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold"
+                    />
+
+
+                </LinearLayout> <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Recovered"
+                        android:padding="4dp"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                    <!-- Create a textView to Display the Number of cases-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Total Recovered"
+                        android:id="@+id/idTVSARecovered"
+                        android:padding="4dp"
+                        android:textSize="12sp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold"
+                    />
+
+
+                </LinearLayout> <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Deaths"
+                        android:padding="4dp"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                    <!-- Create a textView to Display the Number of cases-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Number Of Deaths"
+                        android:id="@+id/idTVSADeaths"
+                        android:padding="4dp"
+                        android:textSize="12sp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold"
+                    />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <!-- Create a recycler view to display the number of
+         records
+    -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idRSA"/>
+
+</LinearLayout>
