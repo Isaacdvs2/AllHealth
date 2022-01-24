@@ -9,9 +9,10 @@ import androidx.appcompat.view.menu.ActionMenuItemView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.*
 
+
 // the state adapter class is used to set the data to each item in the
 // recycler view layout
-class StateRVAdapter (private val stateList:List<StateModal>) :
+class StateRVAdapter (private val stateList:List<StateModel>) :
     Adapter<StateRVAdapter.StateViewHolder>() {
 
 

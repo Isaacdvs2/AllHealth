@@ -1,5 +1,5 @@
-package com.example.healthapp
 
+package com.example.healthapp
 import android.app.DownloadManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -85,7 +85,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun getWorldinfo(){
-        val url = "https://corona.lmao.ninja/v3/covid-19/all"
+        val url = "https://disease.sh/v3/covid-19/all"
         val queue = Volley.newRequestQueue(this@MainActivity)
         val request = JsonObjectRequest(Request.Method.GET,url,null,{response->
             try {
